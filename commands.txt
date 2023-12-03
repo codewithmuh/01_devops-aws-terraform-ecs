@@ -1,0 +1,36 @@
+1. Initialize a new Terraform configuration:
+
+$ terraform init
+
+2. Create a Terraform workspace for staging:
+
+$ terraform workspace new staging
+
+3. Verify the staging workspace:
+
+terraform workspace list
+
+4. Now, you can start working on your Terraform configuration for the staging environment:
+# For example, apply changes in the staging workspace
+terraform apply -var-file=staging.tfvars
+
+
+
+
+0. For Mac M1 user, if they get problem in installaion of terraform. Here is a fix
+
+brew uninstall terraform
+brew install tfenv
+TFENV_ARCH=amd64 tfenv install 1.6.5
+tfenv use 1.6.5
+
+terraform --version
+
+
+
+
+
+Note: cert arn , and account id should be added in variables
+
+desired count of task should be zero in start. till we have ci/cd pipleine ready for application. 
+
