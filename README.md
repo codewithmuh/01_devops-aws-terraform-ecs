@@ -35,4 +35,4 @@ Ensure appropriate permissions and access are configured in your AWS account to 
 
 Keep in mind to replace placeholders like `<placeholder>` with actual values in your scripts and configuration files.
 
-Good luck with setting up your CI/CD pipeline using AWS services and Terraform! If you encounter issues, refer to AWS and Terraform documentation for detailed guidance.
+Good luck with  Architecture using  Terraform on AWS! If you encounter issues, refer to AWS and Terraform documentation for detailed guidance.
