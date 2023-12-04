@@ -7,12 +7,12 @@ The infrastructure for this project involves setting up an environment to suppor
 
 ### Step 01: Obtain Certificate ARN, CNAME Name, and CNAME Value
 
-1. Run the script `pre_req/get-certificate` to create a certificate.
+1. Run the script `pre_requisite/get-certificate` to create a certificate.
     - Update the region name in this script and provide your domain name.
     - It will print the domain ARN and CNAME record; save these for later use.
   
-2. Create an AWS S3 bucket and upload/copy the 'pre_req/production.django-backend.env' file.
-    - Run the Python script `pre_req/script.py`.
+2. Create an AWS S3 bucket and upload/copy the 'pre_requisite/production.django-backend.env' file.
+    - Run the Python script `pre_requisite/script.py`.
     - Update values in `script.py`, such as the S3 bucket name and region.
     - Execute the script to obtain the S3 bucket's ARN and the object URL of the env file; save these for later use.
 
