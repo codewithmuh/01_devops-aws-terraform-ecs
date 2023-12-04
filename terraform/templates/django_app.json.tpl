@@ -1,3 +1,4 @@
+
 [
   {
     "name": "django-app",
@@ -11,32 +12,11 @@
         "protocol": "tcp"
       }
     ],
-    "command": ["gunicorn", "-w", "3", "-b", ":8000", "hello_django.wsgi:application"],
     "environment": [
-      {
-        "name": "RDS_DB_NAME",
-        "value": "${rds_db_name}"
-      },
-      {
-        "name": "RDS_USERNAME",
-        "value": "${rds_username}"
-      },
-      {
-        "name": "RDS_PASSWORD",
-        "value": "${rds_password}"
-      },
-      {
-        "name": "RDS_HOSTNAME",
-        "value": "${rds_hostname}"
-      },
-      {
-        "name": "RDS_PORT",
-        "value": "5432"
-      },
-      {
-        "name": "ALLOWED_HOSTS",
-        "value": "${allowed_hosts}"
-      }
+    {
+      "name": "S3_ARN_ENV_VARIABLE",
+      "value":  "${env_file_arn}"  
+    }
     ],
     "mountPoints": [
       {
@@ -85,3 +65,6 @@
     }
   }
 ]
+
+
+

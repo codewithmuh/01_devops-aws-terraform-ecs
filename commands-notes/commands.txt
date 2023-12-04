@@ -34,3 +34,4 @@ Note: cert arn , and account id should be added in variables
 
 desired count of task should be zero in start. till we have ci/cd pipleine ready for application. 
 
+Make sure to create s3 bucket for env file. ( whichwill be created in future)

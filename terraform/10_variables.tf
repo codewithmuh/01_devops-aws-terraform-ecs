@@ -123,7 +123,7 @@ variable "rds_instance_class" {
 
 variable "certificate_arn" {
   description = "AWS Certificate Manager ARN for validated domain"
-  default     = "ARN Value"
+  default     = "arn:aws:acm:us-west-1:167365792572:certificate/5dc50964-5a0e-47bf-a44a-5a3905608958"
 }
 
 variable "django_ecr_repository_name" {
@@ -143,4 +143,10 @@ variable "nginx_ecr_repository_name" {
 variable "docker_image_url_nginx" {
   description = "Docker image to run in the ECS cluster"
   default     = "167365792572.dkr.ecr.us-west-1.amazonaws/nginx:latest"
+}
+
+
+variable "env_file_arn" {
+  description = "ARN Value of ENV used in Task Definations"
+  default     = "arn:aws:s3:::codewithmuh/production.django-backend.env"
 }
