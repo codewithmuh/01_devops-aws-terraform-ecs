@@ -1,6 +1,6 @@
-# Project 01 - DevOps AWS Terraform CodePipeline
+# Project 01 - DevOps AWS - Creating an Architecture  using Terraform
 
-Welcome to Project 01 in the DevOps AWS series! In this project, we'll create a robust CI/CD pipeline using Terraform and AWS CodePipeline. The goal is to build essential AWS resources like S3, RDS, ECR, ECS, load balancers, security groups, and VPCs to facilitate a seamless deployment process.
+Welcome to Project 01 in the DevOps AWS series! In this project, we'll create a robust Architecture Diagram  using Terraform. The goal is to build essential AWS resources like S3, RDS, ECR, ECS, load balancers, security groups, and VPCs to facilitate a seamless deployment process.
 
 ## Infrastructure Overview
 The infrastructure for this project involves setting up an environment to support a Django backend application. It includes creating AWS services such as S3 for storage, RDS for the database, ECR for container images, ECS for container orchestration, load balancers for traffic distribution, security groups for network security, and VPCs for isolation.
